@@ -15,6 +15,7 @@ const PORT = process.env.PORT || 4140;
 //Definimos las rutas de la API
 server.use('/api/users', require('./routes/users'))
 server.use('/api/trips', require('./routes/trips'))
+server.use('/api/shipping', require('./routes/shipping'))
 
 //Iniciamos el servidor 
 server.listen(PORT, () => {
