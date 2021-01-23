@@ -20,6 +20,4 @@ exports.statusDevices = async (req, res) => {
     } catch (e) {
         console.log(e.message);
     }
-
-
 }
