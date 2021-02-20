@@ -3,7 +3,7 @@ const reportsController = require('../controllers/reports');
 
 const autoReports = ( ) => {
     //Reporte de todos los lunes a las 6am
-    cron.schedule('00 6 * * */1', 
+    cron.schedule('00 06 * * */1', 
         reportsController.reportsMonday 
     )
 }

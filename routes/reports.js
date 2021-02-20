@@ -17,4 +17,21 @@ router.post('/suradirecto/battery',
     reportsController.reportBatterySuraDirecto
 )
 
+// Descargar algun reporte en especifico
+router.get('/download',
+    reportsController.getReport
+);
+
+//Obtener reportes de bateria de sura
+router.get('/surabateryreports',
+    reportsController.getSuraBateryReports
+);
+
+//Obtener reportes de bateria de sura
+router.get('/suradtc',
+    reportsController.eventsDtcsSura
+);
+
+
+
 module.exports = router;
